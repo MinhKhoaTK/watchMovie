@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+    --black:#000;
+    --primary:#fe2c55;
+    --text-color :#333;
+    --while :#fffefed6;
+    --font-family:"Playfair Display", serif;
+}
+html {
+    font-size: 62.5%;
+    color: var(--while);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color:var(--while);
+    overflow-y: overlay;
+}
+// Scrollbar CSS
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+button , input ,[tabindex]{
+    border: none;
+    outline: none;
+}
+a {
+    color:var(--Black);
+    text-decoration: none;
+}
+// Tippy box
+body{
+    .tippy-box {
+        background-color: rgba(84 ,84 ,84 , 0.92);
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    
+    }
+    .tippy-arrow {
+        color: rgba(84 ,84 ,84 , 0.92);
+    }
+    .tippy-content{
+        padding: 8px 9px;
+    }
+
+} 

@@ -1,0 +1,74 @@
+
+.search{
+    --search-height : 46px ;
+
+    position: relative; // - Thay đổi vị trí của phần tử: Khi một phần tử được đặt position: relative;, bạn có thể sử dụng các thuộc tính như top, right, bottom, left để di chuyển
+    display: flex;
+    justify-content: space-between;
+    width: 361px;
+    height: var(--search-height);
+    padding-left:  16px;
+    border: 1.5px solid transparent;
+    border-image: linear-gradient(to right , #0066ff , #ff32d6) 1;
+    ::placeholder {
+        color:#fffefed6;
+    }
+    input {
+        border-radius: 92px;
+        flex: 1;
+        height: 80%;
+        padding-left: 25px;
+        padding-right: 40px;
+        font-size: 1rem;
+        font-family: var(--font-family);
+        background-color: rgba(255, 255, 255, 0.2);
+        caret-color: #ffffff;
+        font-weight: 700;
+        :active{
+            border: #0066ff;
+        }
+    }
+
+}
+
+/// web
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 365px;
+    max-width: 100%;
+  }
+  
+  .input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    outline: none;
+    background: linear-gradient(180deg,rgb(56, 56, 56) 0%, rgb(36, 36, 36)   66%, rgb(41, 41, 41) 100%);
+    color:#fffefed6;
+    transition: .3s ease;
+    border: 1px solid;
+    border-image: conic-gradient( #e33516, #dddaa8,#e7b043) 1;
+    
+  }
+  
+  .input::placeholder {
+    color:#fffefed6;
+  }
+  
+  .input:focus::placeholder {
+    color: #999;
+  }
+  
+  .search__icon {
+    position: absolute;
+    left: 1rem;
+    fill: #fff;
+    width: 1rem;
+    height: 1rem;
+  }
+  

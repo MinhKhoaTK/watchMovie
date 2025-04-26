@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 79px;
+    background-color:#353434;
+}
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;   
+    width: 1150px;
+}
+.logo{
+    display: flex;
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+}
