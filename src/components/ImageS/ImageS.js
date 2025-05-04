@@ -4,7 +4,7 @@ import images from "../../assets/images";
 import { useState } from "react";
 
 function ImageS(
-  { src, alt, classname, fallBack = images.errorImg, ...props },
+  { src, alt, className, fallBack = images.errorImg, ...props },
   ref
 ) {
   const [_fallBack, setFallBack] = useState("");
@@ -16,7 +16,7 @@ function ImageS(
     <img
       src={_fallBack || src}
       alt={alt}
-      className={classNames(styles.wrapper, classname)}
+      className={classNames(styles.wrapper, className)}
       onError={handleError}
     />
   );

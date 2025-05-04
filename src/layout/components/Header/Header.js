@@ -11,7 +11,7 @@ function Header() {
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
         <ImageS
-          classname={cx("logo")}
+          className={cx("logo")}
           src="https://www.pngall.com/wp-content/uploads/13/Anime-Logo-PNG-HD-Image.png"
           alt="Anime for all"
         />
