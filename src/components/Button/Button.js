@@ -2,7 +2,13 @@ import classNames from "classnames/bind";
 import styles from "./Button.module.scss";
 
 const cx = classNames.bind(styles);
-function Button({ children, className, onClick, ...passProps }) {
+function Button({
+  children,
+  className,
+  onClick,
+  custom = false,
+  ...passProps
+}) {
   let Comp = "button";
 
   const props = {
@@ -11,6 +17,7 @@ function Button({ children, className, onClick, ...passProps }) {
   };
   const classes = cx("wrapper", {
     [className]: className,
+    custom,
   });
   return (
     <Comp className={classes} {...props}>

@@ -1,0 +1,88 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    background: rgb(24, 24, 24);
+    height: 1000px;
+    justify-items: center;
+}
+.inner{
+    width: 80%;
+    margin: 0 auto;
+    // text-align: center;
+
+}
+.imgContact{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.05;
+    position: absolute;
+    pointer-events: none;
+}
+
+.title{
+    
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+.info-contacts{
+    margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+    
+}
+.icon-contact{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top:  25px;
+}
+.icon {
+    margin-top: 10px;
+    background-color: rgb(60, 138, 207);
+    border-radius: 10px;
+
+}
+.item-info{
+   margin-left: 12px;
+}
+
+.title-contact {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+
+}
+.table-contact {
+    text-align: center;
+    color: #000;
+    font-weight: 800;
+    background-color: wheat;
+    width: 500px;
+    height: 400px;
+}
+.input-info {
+    margin-top: 40px;
+    width: 300px;
+}
+.btn-contact{
+    margin-top: 55px;
+    width: 150px;
+}
+
+.addres-contact{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
