@@ -21,7 +21,6 @@ export const TwitterIcon = ({
 }) => (
   <svg
     className={className}
-    ariaHidden="true"
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
@@ -42,7 +41,6 @@ export const InstagramIcon = ({
 }) => (
   <svg
     className={className}
-    aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
@@ -65,7 +63,6 @@ export const FacebookIcon = ({
 }) => (
   <svg
     className={className}
-    aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
@@ -86,7 +83,6 @@ export const PhoneIcon = ({
 }) => (
   <svg
     className={className}
-    ariaHidden="true"
     xmlns="http://www.w3.org/2000/svg"
     width={width}
     height={height}
@@ -100,5 +96,51 @@ export const PhoneIcon = ({
       strokeWidth="2"
       d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"
     />
+  </svg>
+);
+export const RateIcon = ({
+  fill = "#ffd401",
+  width = "3.2rem",
+  height = "3.2rem",
+}) => (
+  <svg
+    width={width}
+    height={height}
+    fill={fill}
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 122.88 117.1"
+  >
+    <title>star-symbol</title>
+    <path
+      class="cls-1"
+      d="M64.42,2,80.13,38.7,120,42.26a3.2,3.2,0,0,1,1.82,5.62h0L91.64,74.18l8.9,39A3.19,3.19,0,0,1,98.12,117a3.27,3.27,0,0,1-2.46-.46L61.41,96.1,27.07,116.64a3.18,3.18,0,0,1-4.38-1.09,3.14,3.14,0,0,1-.37-2.38h0l8.91-39L1.09,47.88a3.24,3.24,0,0,1-.32-4.52,3.32,3.32,0,0,1,2.29-1l39.72-3.56L58.49,2a3.24,3.24,0,0,1,5.93,0Z"
+    />
+  </svg>
+);
+export const RateHalf = ({
+  fill = "#ffcf00",
+  width = "3.1rem",
+  height = "3.1rem",
+  className,
+}) => (
+  <svg
+    fill="#fad000"
+    width={width}
+    height={height}
+    viewBox="0 -12 536 536"
+    xmlns="http://www.w3.org/2000/svg"
+    stroke="#fad000"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"></path>
+    </g>
   </svg>
 );

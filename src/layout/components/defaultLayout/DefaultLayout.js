@@ -3,8 +3,9 @@ import Header from "../Header";
 import styles from "./DefaultLayout.module.scss";
 import SliderSwiper from "../Slider";
 import MenuType from "../Menu";
+import Footer from "../Footer/Footer";
 const cx = className.bind(styles);
-function DefaultLayout({ Children }) {
+function DefaultLayout({ children }) {
   return (
     <div className={cx("wrapper")}>
       <Header />
@@ -13,8 +14,9 @@ function DefaultLayout({ Children }) {
       </div>
       <div className={cx("slider")}>
         <SliderSwiper />
-        <div className={cx("content")}>{Children}</div>
       </div>
+      <div className={cx("content")}>{children}</div>
+      <Footer />
     </div>
   );
 }

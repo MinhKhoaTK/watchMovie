@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import styles from "./Slider.module.scss";
 import ImageS from "../../../components/ImageS/ImageS";
+import { sliceMovies } from "../../../components/Datalc";
 
 const cx = classNames.bind(styles);
 function Sliders() {
@@ -28,123 +29,18 @@ function Sliders() {
             },
           }}
         >
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
+          {sliceMovies.map((video) => (
+            <SwiperSlide key={video.id}>
+              <div className={cx("list-item")}>
+                <div className={cx("inner")}>
+                  <ImageS className={cx("image")} src={video.img} />
+                </div>
+                <div className={cx("overlay-content")}>
+                  <p>{video.description}</p>
+                </div>
               </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className={cx("list-item")}>
-              <div className={cx("inner")}>
-                <ImageS
-                  className={cx("image")}
-                  src="https://i.pinimg.com/1200x/42/96/5d/42965d54e95f8f50ccc80649573e73f6.jpg"
-                />
-              </div>
-              <div className={cx("overlay-content")}>
-                <p>dicription sandk sakjdnaks asnkd</p>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       {/*
