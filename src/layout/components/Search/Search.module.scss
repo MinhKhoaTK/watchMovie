@@ -1,4 +1,24 @@
 
+@media (max-width: 768px) {
+  .group {
+    width: 100%;
+  }
+
+  .search-results {
+    max-width: 90vw;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 300px; // giúp dropdown không quá dài
+  }
+
+  .results-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+  }
+}
+
 .search{
     --search-height : 46px ;
 
@@ -71,4 +91,48 @@
     width: 1rem;
     height: 1rem;
   }
-  
+  /// Tipppy
+  .search-results{
+    background: #1e1e1e;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 125px;     // đảm bảo không quá nhỏ
+  max-width: 350px;       // không vượt quá vùng parent hoặc viewport
+  width: fit-content;    // hoặc width: auto nếu nội dung không cố định
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  overflow-y: auto;  
+   max-height: 300px;         // hoặc 50vh nếu muốn linh động theo màn hình
+  overflow-y: auto;          // bật scroll dọc
+  scrollbar-width: auto;     // Firefox
+  -ms-overflow-style: -ms-autohiding-scrollbar; // IE
+  cursor: pointer;
+  }
+  .results-item {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+    gap: 20;
+    background-color: #222;
+    margin: 1rem;
+  }
+  .tab1 {
+    flex: 3;
+    width: 100%;
+    height: 100%;
+  }
+  .tab2 {
+    flex: 7;
+    width: 100%;
+    text-align: start;
+    margin-left: 1.6rem;
+  }
+  .img-results{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .search-results:empty {
+  display: none;
+}

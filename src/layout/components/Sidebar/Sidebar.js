@@ -5,7 +5,7 @@ import Styles from "./Sidebar.module.scss";
 import Images from "../../../components/ImageS";
 import images from "../../../assets/images";
 import ListSelection from "../ListSelection/ListSelection";
-import { netflixMovies } from "../../../components/Datalc";
+import { moviesData } from "../../../components/Datalc";
 const cx = classNames.bind(Styles);
 function Sidebar() {
   return (
@@ -28,7 +28,7 @@ function Sidebar() {
           </span>
         </div>
       </div>
-      <ListSelection data={netflixMovies} />
+      <ListSelection data={moviesData} />
 
       {/* <section>
         <div>

@@ -1,0 +1,35 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.title{
+     position: relative;
+    &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 80%;
+        background: linear-gradient(to right, #3d6aff, #21d4fd);
+        margin-top: 4px;
+    }
+  margin-bottom: 1.5rem;
+}
+
+.genre-catagory{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem; // khoảng cách giữa các card
+    justify-content: start; // hoặc space-between/space-around nếu thích
+
+}
+.pagination{
+    display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px; /* tuỳ chỉnh khoảng cách so với đáy trang */
+
+
+
+}

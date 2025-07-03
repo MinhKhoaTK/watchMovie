@@ -10,12 +10,13 @@ import { moviesData, menuChooseType } from "../../../components/Datalc";
 const cx = classNames.bind(Styles);
 
 function NavigationList() {
-  const [visible, setVisible] = useState(10);
+  const [visible, setVisible] = useState(20);
+
   const loadMore = () => {
     setVisible((pre) => pre + 5);
   };
   const reMovemore = () => {
-    setVisible((pre) => pre - pre + 5);
+    setVisible((pre) => pre - pre + 20);
   };
   return (
     <nav className={cx("nav")}>
@@ -32,9 +33,11 @@ function NavigationList() {
         <ul className={cx("list-item")}>
           {moviesData.slice(0, visible).map((movie) => (
             <li className={cx("list-items")} key={movie.id}>
-              <Link to="./">
-                <CardMovies image={movie.img} description={movie.title} />
-              </Link>
+              <CardMovies
+                image={movie.img}
+                title={movie.title}
+                description={movie.description}
+              />
             </li>
           ))}
         </ul>

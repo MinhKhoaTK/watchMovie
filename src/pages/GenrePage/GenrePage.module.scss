@@ -1,0 +1,36 @@
+@media screen and (max-width:768px) {
+    .row{
+        display: none;
+    }
+    .list-item{
+        flex: 1;
+    }
+    .sidebar{
+        display: none; // xóa hoàn toàn
+    }
+}
+
+.wrapper {
+    width: 100%;
+    background-color:  rgb(24, 24, 24);
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 80% ;
+    overflow: hidden;
+    background-color: black;
+}
+.list-item{
+    flex:8 ;
+}
+.row{
+    width: 0.1%;
+    height: auto;
+    background-color: rgb(83, 84, 85);
+}
+.sidebar{
+    flex:2;
+    // min-width: 200px;
+
+}

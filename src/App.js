@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Fragment } from "react";
 import { policRoutes } from "./routes";
 import DefaultLayout from "./pages/Home";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Routes>
           {policRoutes.map((route, index) => {

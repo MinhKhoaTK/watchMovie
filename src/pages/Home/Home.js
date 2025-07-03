@@ -11,7 +11,9 @@ function Home() {
     <DefaultLayout>
       <div className={cx("wrapper")}>
         <NavigationList />
-        <Sidebar />
+        <span className={cx("sidebar")}>
+          <Sidebar />
+        </span>
       </div>
     </DefaultLayout>
   );
