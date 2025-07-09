@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 import Styles from "./BannerMovies.module.scss";
 import BannerOnly from "../../layout/BannerOnly/BannerOnly";
@@ -9,6 +10,9 @@ import Button from "../../components/Button";
 import { moviesData } from "../../components/Datalc";
 import { MovieCategorySection } from "../../layout/components";
 import ScrollToTop from "../../components/ScrollToTop";
+import ModalTrailer from "../../layout/components/ModalTrailer";
+import config from "../../config";
+import { slugify } from "../../untils";
 
 const cx = classNames.bind(Styles);
 function BannerMovies() {
@@ -16,11 +20,52 @@ function BannerMovies() {
   const animeMovies = moviesData.filter((item) => item.category === "anime");
   const dramaMovies = moviesData.filter((item) => item.category === "drama");
   const comedyMovies = moviesData.filter((item) => item.category === "comedy");
+  const horrorMovies = moviesData.filter((item) => item.category === "horror");
+  const spyMovies = moviesData.filter((item) => item.category === "spy");
 
   const { state } = useLocation();
+  const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   if (!state) return <p>không có dữ liệu phim</p>;
 
-  const { title, description, image } = state;
+  const {
+    id,
+    title,
+    description,
+    image,
+    videoTrailer,
+    videoUrl,
+    thumbnailUrls,
+  } = state;
+  console.log(
+    "trang chi tiết <Banner> " + id,
+    title,
+    description,
+    image,
+    videoTrailer,
+    videoUrl,
+    thumbnailUrls
+  );
+  // console.log("trang bannerDetail : " + videoUrl);
+  const handleOpenTrailer = () => {
+    setIsModalOpen(true);
+  };
+  const handleCloseTrailer = () => {
+    setIsModalOpen(false);
+  };
+  const handleWatchMovie = () => {
+    const movieToWatch = { ...state };
+    console.log("👉 Sending to watch:", movieToWatch);
+
+    // navigate(`${config.routes.watch}/${state.id}`, { state });
+    const slug = slugify(movieToWatch.title);
+
+    navigate(`${config.routes.watch}/${slug}`, { state });
+    console.log(
+      "👉 Đường dẫn navigate:",
+      `${config.routes.watch}/${state.slug}`
+    );
+  };
 
   return (
     <>
@@ -30,6 +75,12 @@ function BannerMovies() {
           <div className={cx("wrapper-info")}>
             <div className={cx("banner")}>
               <ImageS className={cx("img-banner")} src={image} alt="" />
+              <ModalTrailer
+                videoTrailer={videoTrailer}
+                isOpen={isModalOpen}
+                onClose={handleCloseTrailer}
+              />
+
               <div className={cx("backgr-op")} />
               <div className={cx("info")}>
                 <div className={cx("info-tv")}>
@@ -43,7 +94,18 @@ function BannerMovies() {
                     <RateHalf />
                   </span>
                   <p>{description}</p>
-                  <Button className={cx("btn-watching")}>Xem Phim</Button>
+                  <Button
+                    className={cx("btn-watching")}
+                    onClick={handleWatchMovie}
+                  >
+                    Xem Phim
+                  </Button>
+                  <Button
+                    className={cx("btn-watching")}
+                    onClick={handleOpenTrailer}
+                  >
+                    Xem Trailer
+                  </Button>
                 </div>
                 <div>
                   <ImageS src={image} className={cx("info-img")} />
@@ -63,6 +125,8 @@ function BannerMovies() {
                 title="Thể Loại Comedy"
                 data={comedyMovies}
               />
+              <MovieCategorySection title="Phim Kinh Dị" data={horrorMovies} />
+              <MovieCategorySection title="Phim Điệp Viên" data={spyMovies} />
             </div>
           </div>
         </BannerOnly>

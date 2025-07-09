@@ -1,3 +1,5 @@
+// import { createEpisodes } from "../../untils";
+
 export const netflixMovies = [
   {
     id: 0,
@@ -463,6 +465,7 @@ export const menuChooseType = [
   { id: 3, types: "Phổ Biến", link: "/AnimePhoBien" },
   { id: 4, types: "Yêu Thích", link: "/AnimeYeuThich" },
 ];
+
 export const moviesData = [
   {
     id: 1,
@@ -471,8 +474,19 @@ export const moviesData = [
     category: "action",
     description:
       "Một bộ phim khoa học viễn tưởng đầy kịch tính về việc xâm nhập giấc mơ...",
-    episodes: 1,
+    episodes: 3,
     views: 3478921,
+    thumbnailUrls: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv38JbVTOJaTlZ15Y9h-NDVfiNN3ITiuQpg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv38JbVTOJaTlZ15Y9h-NDVfiNN3ITiuQpg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv38JbVTOJaTlZ15Y9h-NDVfiNN3ITiuQpg&s",
+    ],
+    videoTrailer: "YoHD9XEInc0",
+    videoUrl: [
+      "https://www.youtube.com/watch?v=i9zjvUywVG8",
+      "https://www.youtube.com/watch?v=i3-jlhJgU9U",
+      "https://www.youtube.com/watch?v=0b-H8oQUs1A",
+    ],
   },
   {
     id: 2,
@@ -481,8 +495,14 @@ export const moviesData = [
     category: "action",
     description:
       "Hành trình cuối cùng của nhóm Avengers nhằm đảo ngược hậu quả...",
-    episodes: 1,
+    episodes: 10,
     views: 4893042,
+    thumbnailUrls: [
+      "https://upload.wikimedia.org/wikipedia/vi/2/2d/Avengers_Endgame_bia_teaser.jpg",
+      "https://upload.wikimedia.org/wikipedia/vi/2/2d/Avengers_Endgame_bia_teaser.jpg",
+    ],
+    videoTrailer: "TcMBFSGVi1c",
+    videoUrl: ["https://www.youtube.com/watch?v=8gcRTMr-rlg"],
   },
   {
     id: 3,
@@ -492,6 +512,9 @@ export const moviesData = [
     description: "Một chuyến du hành không gian vượt thời gian...",
     episodes: 1,
     views: 4103920,
+    thumbnailUrls: [""],
+    videoTrailer: "zSWdZVtXT7E ",
+    videoUrl: "",
   },
   {
     id: 4,
@@ -502,6 +525,9 @@ export const moviesData = [
       "Bộ phim đoạt giải Oscar kể về sự chênh lệch giai cấp giữa hai gia đình...",
     episodes: 1,
     views: 2157821,
+    thumbnailUrls: [""],
+    videoTrailer: "isOGD_7hNIY",
+    videoUrl: "",
   },
   {
     id: 5,
@@ -511,6 +537,9 @@ export const moviesData = [
     description: "Siêu phẩm về Batman đối đầu với Joker...",
     episodes: 1,
     views: 4231120,
+    thumbnailUrls: [""],
+    videoTrailer: "EXeTwQWrcwY",
+    videoUrl: "",
   },
   {
     id: 6,
@@ -520,6 +549,9 @@ export const moviesData = [
     description: "Câu chuyện về gã hề bị xã hội ruồng bỏ...",
     episodes: 1,
     views: 3291030,
+    thumbnailUrls: [""],
+    videoTrailer: "zAGVQLHvwOY",
+    videoUrl: "",
   },
   {
     id: 7,
@@ -529,6 +561,9 @@ export const moviesData = [
     description: "Một đặc vụ khám phá công nghệ đảo ngược thời gian...",
     episodes: 1,
     views: 3120081,
+    thumbnailUrls: [""],
+    videoTrailer: "AZGcmvrTX9M",
+    videoUrl: "",
   },
   {
     id: 8,
@@ -538,6 +573,9 @@ export const moviesData = [
     description: "Hành trình chàng trai trẻ đến hành tinh sa mạc...",
     episodes: 2,
     views: 2983729,
+    thumbnailUrls: [""],
+    videoTrailer: "n9xhJrPXop4",
+    videoUrl: "",
   },
   {
     id: 9,
@@ -547,6 +585,9 @@ export const moviesData = [
     description: "Jake Sully và người Navi bảo vệ Pandora...",
     episodes: 2,
     views: 4562310,
+    thumbnailUrls: [""],
+    videoTrailer: "d9MyW72ELq0",
+    videoUrl: "",
   },
   {
     id: 10,
@@ -557,6 +598,9 @@ export const moviesData = [
       "Khắc họa nhà khoa học Oppenheimer và quá trình tạo ra bom nguyên tử.",
     episodes: 1,
     views: 3882099,
+    thumbnailUrls: [""],
+    videoTrailer: "CaZCZUyQb40",
+    videoUrl: "",
   },
   {
     id: 11,
@@ -567,6 +611,9 @@ export const moviesData = [
       "Eddie Brock hợp nhất với sinh vật ngoài hành tinh để trở thành Venom – anti-hero đáng gờm.",
     episodes: 1,
     views: 3120000,
+    thumbnailUrls: [""],
+    videoTrailer: "u9Mv98Gr5pY",
+    videoUrl: "",
   },
   {
     id: 12,
@@ -577,6 +624,9 @@ export const moviesData = [
       "Venom đối đầu với Carnage – sinh vật cộng sinh nguy hiểm sinh ra từ chính hắn.",
     episodes: 1,
     views: 2800000,
+    thumbnailUrls: [""],
+    videoTrailer: "-FmWuCgJmxo",
+    videoUrl: "",
   },
   {
     id: 13,
@@ -587,6 +637,9 @@ export const moviesData = [
       "Trận chiến cuối cùng của Venom để bảo vệ chính nghĩa và kiểm soát con quái vật bên trong.",
     episodes: 1,
     views: 2410000,
+    thumbnailUrls: [""],
+    videoTrailer: "iwaU3a_zD2o",
+    videoUrl: "",
   },
   {
     id: 14,
@@ -597,6 +650,9 @@ export const moviesData = [
       "Steve Rogers trở thành Captain America và tham gia chiến đấu trong Thế Chiến II.",
     episodes: 1,
     views: 3900000,
+    thumbnailUrls: [""],
+    videoTrailer: "JerVrbLldXw",
+    videoUrl: "",
   },
   {
     id: 15,
@@ -607,6 +663,9 @@ export const moviesData = [
       "Captain đối đầu người bạn cũ – Winter Soldier và vạch trần âm mưu trong SHIELD.",
     episodes: 1,
     views: 4150000,
+    thumbnailUrls: [""],
+    videoTrailer: "7SlILk2WMTI",
+    videoUrl: "",
   },
   {
     id: 16,
@@ -617,16 +676,22 @@ export const moviesData = [
       "Nội bộ Avengers chia rẽ khi chính phủ can thiệp, dẫn đến cuộc nội chiến siêu anh hùng.",
     episodes: 1,
     views: 4420000,
+    thumbnailUrls: [""],
+    videoTrailer: "dKrVegVI0Us",
+    videoUrl: "",
   },
   {
     id: 17,
-    title: "Captain America 4",
+    title: "Captain America 4 – Captain America: Brave New World",
     img: "https://i.redd.it/ctdnwc5nk2sb1.jpg",
     category: "action",
     description:
       "Falcon kế thừa chiếc khiên Captain America và đối mặt với trách nhiệm mới.",
     episodes: 1,
     views: 3660000,
+    thumbnailUrls: [""],
+    videoTrailer: "1pHDWnXmK7Y",
+    videoUrl: "",
   },
   {
     id: 18,
@@ -637,16 +702,22 @@ export const moviesData = [
       "T’Challa kế vị ngôi vua Wakanda và chiến đấu để bảo vệ vương quốc khỏi âm mưu xâm lược.",
     episodes: 1,
     views: 4390000,
+    thumbnailUrls: [""],
+    videoTrailer: "xjDjIWPwcPU",
+    videoUrl: "",
   },
   {
     id: 19,
-    title: "Black Panther 2",
+    title: "Black Panther 2 : Wakanda Forever",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYommjb29kr2hjlpmMDspz-48wq-ztGBRDSg&s",
     category: "action",
     description:
       "Wakanda đoàn kết bảo vệ đất nước trước kẻ thù mới sau sự mất mát lớn.",
     episodes: 1,
     views: 4120000,
+    thumbnailUrls: [""],
+    videoTrailer: "_Z3QKkl1WyM",
+    videoUrl: "",
   },
   {
     id: 20,
@@ -657,6 +728,9 @@ export const moviesData = [
       "Tony Stark chế tạo bộ giáp và trở thành Iron Man – khởi đầu của vũ trụ Marvel.",
     episodes: 1,
     views: 4730000,
+    thumbnailUrls: [""],
+    videoTrailer: "8ugaeA-nMTc",
+    videoUrl: "",
   },
 
   {
@@ -668,6 +742,9 @@ export const moviesData = [
       "Cuộc rượt đuổi vui nhộn giữa mèo Tom và chuột Jerry đầy hài hước và sáng tạo.",
     episodes: 52,
     views: 3092483,
+    thumbnailUrls: [""],
+    videoTrailer: "kP9TfCWaQT4",
+    videoUrl: "",
   },
   {
     id: 22,
@@ -678,6 +755,9 @@ export const moviesData = [
       "Peter Parker mở đa vũ trụ, đối mặt kẻ thù từ các thế giới khác để bảo vệ mọi người.",
     episodes: 1,
     views: 4761287,
+    thumbnailUrls: [""],
+    videoTrailer: "JfVOs4VSpmA",
+    videoUrl: "",
   },
   {
     id: 23,
@@ -688,6 +768,9 @@ export const moviesData = [
       "Chị Mười Ba chiến đấu trong 3 ngày nghẹt thở để cứu em mình khỏi cái bẫy tử thần.",
     episodes: 5,
     views: 1892217,
+    thumbnailUrls: [""],
+    videoTrailer: "",
+    videoUrl: "",
   },
   {
     id: 24,
@@ -698,6 +781,9 @@ export const moviesData = [
       "Gru thời trẻ cùng đội Minions nghịch ngợm bước vào hành trình trở thành ác nhân khét tiếng.",
     episodes: 1,
     views: 2745092,
+    thumbnailUrls: [""],
+    videoTrailer: "6DxjJzmYsXo",
+    videoUrl: "",
   },
   {
     id: 25,
@@ -708,6 +794,9 @@ export const moviesData = [
       "Một nhóm bạn về quê nghỉ dưỡng và phát hiện những hiện tượng kinh dị kỳ bí.",
     episodes: 1,
     views: 2167448,
+    thumbnailUrls: [""],
+    videoTrailer: "JvHqCk3l3UE",
+    videoUrl: "",
   },
   {
     id: 26,
@@ -718,6 +807,9 @@ export const moviesData = [
       "Wakanda bảo vệ đất nước khỏi kẻ thù mới sau sự ra đi của vua T’Challa.",
     episodes: 1,
     views: 3927440,
+    thumbnailUrls: [""],
+    videoTrailer: "_Z3QKkl1WyM",
+    videoUrl: "",
   },
   {
     id: 27,
@@ -728,6 +820,9 @@ export const moviesData = [
       "Thế giới nội tâm của cô bé Riley hiện ra sống động qua 5 cảm xúc trong đầu cô.",
     episodes: 13,
     views: 3512293,
+    thumbnailUrls: [""],
+    videoTrailer: "yRUAzGQ3nSY",
+    videoUrl: "",
   },
   {
     id: 28,
@@ -738,6 +833,9 @@ export const moviesData = [
       "Một điệp viên bí ẩn thực hiện nhiệm vụ tối mật, mở ra bí mật khôn lường.",
     episodes: 8,
     views: 2315094,
+    thumbnailUrls: [""],
+    videoTrailer: "_Z3QKkl1WyM",
+    videoUrl: "",
   },
   {
     id: 29,
@@ -748,6 +846,9 @@ export const moviesData = [
       "Lấy cảm hứng từ truyền thuyết đô thị Việt, mang đến nỗi ám ảnh kinh dị gần gũi.",
     episodes: 1,
     views: 2221920,
+    thumbnailUrls: [""],
+    videoTrailer: "iPPNEYMEO7M",
+    videoUrl: "",
   },
   {
     id: 30,
@@ -758,6 +859,9 @@ export const moviesData = [
       "Câu chuyện tình yêu sâu lắng và âm nhạc lãng mạn của nhạc sĩ Trịnh Công Sơn.",
     episodes: 3,
     views: 2683211,
+    thumbnailUrls: [""],
+    videoTrailer: "IosqnBOkk2I",
+    videoUrl: "",
   },
 
   {
@@ -769,6 +873,9 @@ export const moviesData = [
       "Một vụ án mạng tại thị trấn nhỏ làm dấy lên hàng loạt tình huống dở khóc dở cười.",
     episodes: 8,
     views: 2134001,
+    thumbnailUrls: [""],
+    videoTrailer: "oXzG3yz7_Cw",
+    videoUrl: "",
   },
   {
     id: 32,
@@ -779,6 +886,9 @@ export const moviesData = [
       "Bộ phim hài nhẹ nhàng kể về kỳ nghỉ hè đầy bất ngờ bên hồ nước yên bình.",
     episodes: 6,
     views: 1859032,
+    thumbnailUrls: [""],
+    videoTrailer: "FzYkUXT-huc",
+    videoUrl: "",
   },
   {
     id: 33,
@@ -789,6 +899,9 @@ export const moviesData = [
       "Chuyện đời thường hài hước của một gia đình với ông chồng ngốc nghếch nhưng đáng yêu.",
     episodes: 210,
     views: 3489012,
+    thumbnailUrls: [""],
+    videoTrailer: "0yq3RzZzWj0",
+    videoUrl: "",
   },
   {
     id: 34,
@@ -799,6 +912,9 @@ export const moviesData = [
       "Một nhân viên bán máy tính vô tình sở hữu dữ liệu mật của CIA trong đầu mình.",
     episodes: 91,
     views: 2971230,
+    thumbnailUrls: [""],
+    videoTrailer: "VkxZI0Xv0P4",
+    videoUrl: "",
   },
   {
     id: 35,
@@ -809,6 +925,9 @@ export const moviesData = [
       "Cuộc thi tìm kiếm cây hài mới đầy sáng tạo và tiếng cười từ Ấn Độ.",
     episodes: 3,
     views: 1888340,
+    thumbnailUrls: [""],
+    videoTrailer: "OvIqajWDzWs",
+    videoUrl: "",
   },
   {
     id: 36,
@@ -819,6 +938,9 @@ export const moviesData = [
       "Kỷ niệm tuổi trẻ của một cậu sinh viên đi làm thêm tại câu lạc bộ Red Oaks.",
     episodes: 26,
     views: 2123459,
+    thumbnailUrls: [""],
+    videoTrailer: "OcGIvQJhbSY",
+    videoUrl: "",
   },
   {
     id: 37,
@@ -829,6 +951,9 @@ export const moviesData = [
       "Bộ đôi săn ma khám phá hiện tượng siêu nhiên gây cười và bất ngờ.",
     episodes: 8,
     views: 2023348,
+    thumbnailUrls: [""],
+    videoTrailer: "yg8b-ZIQ4e8",
+    videoUrl: "",
   },
   {
     id: 38,
@@ -839,6 +964,9 @@ export const moviesData = [
       "Gameshow sinh tồn hài hước trên đảo với những tình huống không ai ngờ tới.",
     episodes: 6,
     views: 1744501,
+    thumbnailUrls: [""],
+    videoTrailer: "RRyM7nQMxxA",
+    videoUrl: "",
   },
   {
     id: 39,
@@ -849,6 +977,9 @@ export const moviesData = [
       "Một thế lực ma quái tấn công làng quê hẻo lánh khiến dân làng rơi vào nỗi sợ.",
     episodes: 1,
     views: 1592837,
+    thumbnailUrls: [""],
+    videoTrailer: "QAv18f71ClM",
+    videoUrl: "",
   },
   {
     id: 40,
@@ -859,6 +990,9 @@ export const moviesData = [
       "Một nhóm người bị xã hội ruồng bỏ cùng nhau đứng lên thực thi công lý.",
     episodes: 12,
     views: 2149584,
+    thumbnailUrls: [""],
+    videoTrailer: "8EUPvepHn3I",
+    videoUrl: "",
   },
   {
     id: 41,
@@ -869,6 +1003,9 @@ export const moviesData = [
       "Hành trình cậu bé Naruto mồ côi nuôi giấc mơ trở thành Hokage vĩ đại.",
     episodes: 220,
     views: 10800000,
+    thumbnailUrls: [""],
+    videoTrailer: "yeUpnIKt6k4",
+    videoUrl: "",
   },
   {
     id: 42,
@@ -879,6 +1016,9 @@ export const moviesData = [
       "Naruto tiếp tục trưởng thành, đối đầu tổ chức Akatsuki và số phận định mệnh.",
     episodes: 500,
     views: 9700000,
+    thumbnailUrls: [""],
+    videoTrailer: "22R0j8UKRzY",
+    videoUrl: "",
   },
   {
     id: 43,
@@ -889,6 +1029,9 @@ export const moviesData = [
       "Songoku và bạn bè tìm ngọc rồng và chiến đấu với các kẻ thù mạnh mẽ khắp vũ trụ.",
     episodes: 153,
     views: 8800000,
+    thumbnailUrls: [""],
+    videoTrailer: "P6XHsn5_4d8",
+    videoUrl: "",
   },
   {
     id: 44,
@@ -899,6 +1042,9 @@ export const moviesData = [
       "Goku bước vào các giải đấu liên vũ trụ và đạt đến cấp độ sức mạnh thần thánh.",
     episodes: 131,
     views: 9023000,
+    thumbnailUrls: [""],
+    videoTrailer: "lzO1auYP_is",
+    videoUrl: "",
   },
   {
     id: 45,
@@ -909,6 +1055,9 @@ export const moviesData = [
       "Phiên bản huyền thoại với các trận chiến đỉnh cao và kẻ thù như Frieza, Cell, Buu.",
     episodes: 291,
     views: 9480000,
+    thumbnailUrls: [""],
+    videoTrailer: "tpjj_JO6iJw",
+    videoUrl: "",
   },
   {
     id: 46,
@@ -919,6 +1068,9 @@ export const moviesData = [
       "Hội pháp sư Fairy Tail tham gia các nhiệm vụ và chiến đấu vì tình bạn và công lý.",
     episodes: 175,
     views: 7855000,
+    thumbnailUrls: [""],
+    videoTrailer: "4KSN7mxhiYE",
+    videoUrl: "",
   },
   {
     id: 47,
@@ -929,6 +1081,9 @@ export const moviesData = [
       "Tiếp nối hành trình của Natsu và đồng đội, đối đầu những hội pháp sư tà ác.",
     episodes: 102,
     views: 6103000,
+    thumbnailUrls: [""],
+    videoTrailer: "4KSN7mxhiYE",
+    videoUrl: "",
   },
   {
     id: 48,
@@ -939,6 +1094,9 @@ export const moviesData = [
       "Fairy Tail thực hiện nhiệm vụ trăm năm chưa từng ai hoàn thành trong lịch sử.",
     episodes: 12,
     views: 4732000,
+    thumbnailUrls: [""],
+    videoTrailer: "E1a5MRYIGUk",
+    videoUrl: "",
   },
   {
     id: 49,
@@ -949,6 +1107,9 @@ export const moviesData = [
       "Kuro là chú mèo máy láu cá với những phát minh độc lạ giúp đỡ cậu chủ nhỏ.",
     episodes: 36,
     views: 2220000,
+    thumbnailUrls: [""],
+    videoTrailer: "GQX6XmvsoKQ",
+    videoUrl: "",
   },
   {
     id: 50,
@@ -959,6 +1120,9 @@ export const moviesData = [
       "Ash và Pikachu chu du thế giới, thu phục và chiến đấu bằng các Pokémon.",
     episodes: 1200,
     views: 11900000,
+    thumbnailUrls: [""],
+    videoTrailer: "_c_hMehCORQ",
+    videoUrl: "",
   },
   {
     id: 51,
@@ -969,6 +1133,9 @@ export const moviesData = [
       "Nhóm thiếu niên lạc vào thế giới số và cùng Digimon chiến đấu chống lại cái ác.",
     episodes: 54,
     views: 7030000,
+    thumbnailUrls: [""],
+    videoTrailer: "HW4rHohJexY",
+    videoUrl: "",
   },
   {
     id: 52,
@@ -979,6 +1146,9 @@ export const moviesData = [
       "Ichigo trở thành Thần Chết thay thế, chiến đấu với Hollow và bảo vệ linh hồn.",
     episodes: 366,
     views: 8640000,
+    thumbnailUrls: [""],
+    videoTrailer: "rOnMywg1c9I",
+    videoUrl: "",
   },
   {
     id: 53,
@@ -989,6 +1159,9 @@ export const moviesData = [
       "Chuyện tình hài hước, lãng mạn và đầy rắc rối giữa cậu học sinh và các cô gái ngoài hành tinh.",
     episodes: 26,
     views: 3300000,
+    thumbnailUrls: [""],
+    videoTrailer: "lS5Fpa1LEMs",
+    videoUrl: "",
   },
   {
     id: 54,
@@ -999,6 +1172,9 @@ export const moviesData = [
       "Cuộc phiêu lưu kỳ ảo giữa hai thế giới với đôi cánh mang sức mạnh cổ xưa.",
     episodes: 52,
     views: 4320000,
+    thumbnailUrls: [""],
+    videoTrailer: "xhK4DRjnP1w",
+    videoUrl: "",
   },
   {
     id: 55,
@@ -1009,6 +1185,30 @@ export const moviesData = [
       "Usagi và nhóm thủy thủ chiến đấu để bảo vệ Trái Đất khỏi thế lực bóng tối.",
     episodes: 200,
     views: 7590000,
+    thumbnailUrls: [""],
+    videoTrailer: "XDnKDYpvEgo",
+    videoUrl: "",
+  },
+  {
+    id: 56,
+    title: "Genshin Impact ",
+    img: "https://store-images.s-microsoft.com/image/apps.8648.14057893183113088.f6290e57-0d66-4252-a17e-d1fd92cbc82b.1d8e84d0-dae6-4cab-b76a-fad7289904b9",
+    category: "anime",
+    description:
+      "Genshin Impact là một game nhập vai phiêu lưu thế giới mở. Bạn sẽ khám phá một thế giới giả tưởng có tên trong trò chơi.",
+    episodes: 200,
+    views: 7590000,
+    thumbnailUrls: [
+      "https://store-images.s-microsoft.com/image/apps.8648.14057893183113088.f6290e57-0d66-4252-a17e-d1fd92cbc82b.1d8e84d0-dae6-4cab-b76a-fad7289904b9",
+      "https://store-images.s-microsoft.com/image/apps.8648.14057893183113088.f6290e57-0d66-4252-a17e-d1fd92cbc82b.1d8e84d0-dae6-4cab-b76a-fad7289904b9",
+      "https://store-images.s-microsoft.com/image/apps.8648.14057893183113088.f6290e57-0d66-4252-a17e-d1fd92cbc82b.1d8e84d0-dae6-4cab-b76a-fad7289904b9",
+    ],
+    videoTrailer: "JZB6qRCzBow",
+    videoUrl: [
+      "/videos/genshin.mp4",
+      "/videos/genshin2.mp4",
+      "/videos/genshin3.mp4",
+    ],
   },
 ];
 export const sliceMovies = [

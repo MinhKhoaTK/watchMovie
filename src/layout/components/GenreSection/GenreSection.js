@@ -19,14 +19,6 @@ function GenreSection({ data = [] }) {
     (movie) => movie.category?.toLowerCase() === genreName?.toLowerCase()
   );
 
-  // const genreMovie = data.filter((movie) => {
-  //   return (
-  //     typeof movie.category === "string" &&
-  //     typeof genreName === "string" &&
-  //     movie.category.toLowerCase() === genreName.toLowerCase()
-  //   );
-  // });
-
   console.table(genreMovie);
   console.log(genreMovie.map((m) => m.category) + "genreCategory");
   /// Phép tính next trang
@@ -51,10 +43,14 @@ function GenreSection({ data = [] }) {
         ) : (
           currentMovies.map((movies) => (
             <CardMovies
-              key={movies.id}
+              id={movies.id}
               image={movies.img}
               title={movies.title}
               description={movies.description}
+              videoTrailer={movies.videoTrailer}
+              videoUrl={movies.videoUrl}
+              episodes={movies.episodes}
+              thumbnailUrls={movies.thumbnailUrls}
             />
           ))
         )}

@@ -8,10 +8,30 @@ import ImageS from "../../../components/ImageS";
 import config from "../../../config";
 
 const cx = classNames.bind(Styles);
-function CardMovies({ image, description, title }) {
+function CardMovies({
+  id,
+  image,
+  description,
+  title,
+  videoTrailer,
+  videoUrl,
+  episodes,
+  thumbnailUrls,
+}) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(config.routes.baner, { state: { title, image, description } });
+    navigate(config.routes.baner, {
+      state: {
+        id,
+        title,
+        image,
+        description,
+        videoTrailer,
+        videoUrl,
+        episodes,
+        thumbnailUrls,
+      },
+    });
   };
   return (
     <div className={cx("container")}>

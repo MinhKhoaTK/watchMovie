@@ -26,9 +26,15 @@ function MovieCategorySection({ title, data = [] }) {
         {data.map((movie) => (
           <SwiperSlide key={movie.id}>
             <CardMovies
+              id={movie.id}
               image={movie.img}
               title={movie.title}
               description={movie.description}
+              videoTrailer={movie.videoTrailer}
+              key={movie.id}
+              videoUrl={movie.videoUrl}
+              episodes={movie.episodes}
+              thumbnailUrls={movie.thumbnailUrls}
             />
           </SwiperSlide>
         ))}

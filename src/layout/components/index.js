@@ -9,3 +9,5 @@ export { default as Slider } from "./Slider";
 export { default as NavigationList } from "./NavigationList";
 export { default as MovieCategorySection } from "./MovieCategorySection";
 export { default as GenreSection } from "./GenreSection";
+export { default as VideoPlayer } from "./VideoPlayer";
+export { default as EpisodeCarousel } from "./EpisodeCarousel";

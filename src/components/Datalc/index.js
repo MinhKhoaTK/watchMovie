@@ -3,4 +3,5 @@ export {
   moviesData,
   menuChooseType,
   sliceMovies,
+  moviesDataFake,
 } from "./Datalc";
