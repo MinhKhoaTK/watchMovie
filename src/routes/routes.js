@@ -20,6 +20,12 @@ const policRoutes = [
     component: WatchMovie,
     layout: null,
   },
+  {
+    path: config.routes.watch + "/:slug", //  fallback nếu chưa có ep
+    component: WatchMovie,
+    layout: null,
+  },
+  ///////
 ];
 
 export { policRoutes };

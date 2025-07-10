@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import classNames from "classnames/bind";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 
@@ -21,7 +21,12 @@ function WatchMovie() {
   const location = useLocation();
   const [currentEp, setCurrentEp] = useState(Number(ep) || 1);
   const navigate = useNavigate();
-
+  // Redirect nếu thiếu ep
+  useEffect(() => {
+    if (!ep) {
+      navigate(`/watch/${slug}/1`, { replace: true });
+    }
+  }, [ep, slug, navigate]);
   // const movie = location.state || enhancedData.find((m) => m.id === Number(id));
   // Fallback nếu không có state khi reload hoặc mở từ tab mới
   const movie = location.state || enhancedData.find((m) => m.slug === slug);

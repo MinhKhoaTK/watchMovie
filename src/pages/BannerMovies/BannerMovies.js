@@ -37,7 +37,6 @@ function BannerMovies() {
     videoTrailer,
     episodes
   );
-  // console.log("trang bannerDetail : " + videoUrl);
   const handleOpenTrailer = () => {
     setIsModalOpen(true);
   };
@@ -46,8 +45,6 @@ function BannerMovies() {
   };
   const handleWatchMovie = () => {
     const movieToWatch = { ...state };
-    // console.log("👉 Sending to watch:", movieToWatch);
-    // navigate(`${config.routes.watch}/${state.id}`, { state });
     const slug = slugify(movieToWatch.title);
 
     navigate(`${config.routes.watch}/${slug}`, { state });
