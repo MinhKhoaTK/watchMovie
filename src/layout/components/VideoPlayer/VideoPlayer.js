@@ -9,8 +9,13 @@ function VideoPlayer({ id, title, image, description, videoUrl }) {
   console.log("component Videoplayer : " + title, image, description, videoUrl);
   return (
     <div className={cx("wrapper")}>
-      <video className={cx("player")} controls poster={image} key={videoUrl}>
-        <source src={videoUrl} type="video/mp4" />
+      <video
+        className={cx("player")}
+        controls
+        poster={image}
+        key={videoUrl.videoUrl}
+      >
+        <source src={videoUrl.videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <h2 className={cx("title")}>{title}</h2>

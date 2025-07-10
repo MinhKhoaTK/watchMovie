@@ -48,9 +48,7 @@ function GenreSection({ data = [] }) {
               title={movies.title}
               description={movies.description}
               videoTrailer={movies.videoTrailer}
-              videoUrl={movies.videoUrl}
               episodes={movies.episodes}
-              thumbnailUrls={movies.thumbnailUrls}
             />
           ))
         )}

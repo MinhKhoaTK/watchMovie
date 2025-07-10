@@ -16,7 +16,7 @@ const policRoutes = [
   },
   // { path: config.routes.watch + "/:id", component: WatchMovie, layout: null },
   {
-    path: config.routes.watch + "/:slug",
+    path: config.routes.watch + "/:slug/:ep",
     component: WatchMovie,
     layout: null,
   },

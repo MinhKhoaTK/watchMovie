@@ -26,7 +26,7 @@ function ListSelection({ data }) {
                   <span className={cx("title-item")}>
                     {datas.title}
                     <p>
-                      số tập : {datas.episodes} / {datas.episodes}
+                      số tập : {datas.episodes.id} / {datas.episodes.id}
                     </p>
                     <p>lượt xem : {datas.views}</p>
                   </span>

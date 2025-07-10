@@ -8,16 +8,7 @@ import ImageS from "../../../components/ImageS";
 import config from "../../../config";
 
 const cx = classNames.bind(Styles);
-function CardMovies({
-  id,
-  image,
-  description,
-  title,
-  videoTrailer,
-  videoUrl,
-  episodes,
-  thumbnailUrls,
-}) {
+function CardMovies({ id, image, description, title, videoTrailer, episodes }) {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate(config.routes.baner, {
@@ -27,9 +18,7 @@ function CardMovies({
         image,
         description,
         videoTrailer,
-        videoUrl,
         episodes,
-        thumbnailUrls,
       },
     });
   };

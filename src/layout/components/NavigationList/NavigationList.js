@@ -38,10 +38,8 @@ function NavigationList() {
                 title={movie.title}
                 description={movie.description}
                 videoTrailer={movie.videoTrailer}
-                videoUrl={movie.videoUrl}
                 id={movie.id}
                 episodes={movie.episodes}
-                thumbnailUrls={movie.thumbnailUrls}
               />
             </li>
           ))}

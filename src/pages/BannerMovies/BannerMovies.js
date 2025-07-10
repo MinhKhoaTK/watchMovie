@@ -28,23 +28,14 @@ function BannerMovies() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   if (!state) return <p>không có dữ liệu phim</p>;
 
-  const {
-    id,
-    title,
-    description,
-    image,
-    videoTrailer,
-    videoUrl,
-    thumbnailUrls,
-  } = state;
+  const { id, title, description, image, videoTrailer, episodes } = state;
   console.log(
     "trang chi tiết <Banner> " + id,
     title,
     description,
     image,
     videoTrailer,
-    videoUrl,
-    thumbnailUrls
+    episodes
   );
   // console.log("trang bannerDetail : " + videoUrl);
   const handleOpenTrailer = () => {
@@ -55,16 +46,12 @@ function BannerMovies() {
   };
   const handleWatchMovie = () => {
     const movieToWatch = { ...state };
-    console.log("👉 Sending to watch:", movieToWatch);
-
+    // console.log("👉 Sending to watch:", movieToWatch);
     // navigate(`${config.routes.watch}/${state.id}`, { state });
     const slug = slugify(movieToWatch.title);
 
     navigate(`${config.routes.watch}/${slug}`, { state });
-    console.log(
-      "👉 Đường dẫn navigate:",
-      `${config.routes.watch}/${state.slug}`
-    );
+    console.log("👉 Đường dẫn navigate:", `${config.routes.watch}/${state}`);
   };
 
   return (

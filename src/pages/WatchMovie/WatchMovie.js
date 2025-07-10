@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classNames from "classnames/bind";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 
 import Styles from "./WatchMovie.module.scss";
 import WatchMovieOnly from "../../layout/WatchMovieOnly";
@@ -20,21 +20,26 @@ function WatchMovie() {
   const { slug, ep } = useParams();
   const location = useLocation();
   const [currentEp, setCurrentEp] = useState(Number(ep) || 1);
+  const navigate = useNavigate();
 
   // const movie = location.state || enhancedData.find((m) => m.id === Number(id));
   // Fallback nếu không có state khi reload hoặc mở từ tab mới
   const movie = location.state || enhancedData.find((m) => m.slug === slug);
   if (!movie) return <p className={cx("not-found")}>Phim không tồn tại</p>;
 
-  const { id, description, image, episodes, thumbnailUrls } = movie;
-  const currentVideo = movie.videoUrl?.[currentEp - 1] || "";
+  const { id, description, image, episodes } = movie;
+  const currentVideo = movie.episodes?.[currentEp - 1] || "";
 
   console.log("WatchMovie PAge : episodes : " + episodes);
-  console.log("WatchMovie PAge : movie.videoUrls : " + movie.videoUrl);
+  // console.log("WatchMovie PAge : movie.videoUrls : " + movieurl);
+
   console.log("WatchMovie PAge : movie.title : " + movie.title);
   console.log("WatchMovie PAge : currentVideo : " + movie.title);
-  console.log("WatchMovie PAge : movie.thumbnailUrls : " + movie.thumbnailUrls);
 
+  const handleClickChooseEp = (epNum) => {
+    setCurrentEp(epNum);
+    navigate(`/watch/${slugify(movie.title)}/${epNum}`);
+  };
   return (
     <>
       <ScrollToTop />
@@ -52,10 +57,9 @@ function WatchMovie() {
             </div>
             <div className={cx("Episode-carousel")}>
               <EpisodeCarousel
-                thumbnailUrls={thumbnailUrls}
                 episodes={episodes}
                 currentEp={currentEp}
-                onSelect={setCurrentEp}
+                onSelect={(epNum) => handleClickChooseEp(epNum)}
               />
             </div>
           </div>

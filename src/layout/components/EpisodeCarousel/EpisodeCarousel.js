@@ -7,7 +7,7 @@ import ImageS from "../../../components/ImageS";
 // import { moviesData } from "../../../components/Datalc";
 
 const cx = classNames.bind(Styles);
-function EpisodeCarousel({ episodes, currentEp, thumbnailUrls, onSelect }) {
+function EpisodeCarousel({ episodes, currentEp, onSelect }) {
   console.log("Episodes Page : episodes " + episodes);
   console.log("Episodes Page : currentEp " + currentEp);
 
@@ -24,17 +24,16 @@ function EpisodeCarousel({ episodes, currentEp, thumbnailUrls, onSelect }) {
             1024: { slidesPerView: 5 },
           }}
         >
-          {Array.from({ length: episodes }, (_, index) => {
-            const ep = index + 1;
-            // console.log("chuyển tập" + onSelect(ep));
+          {episodes.map((ep, index) => {
+            const epNum = index + 1;
             return (
-              <SwiperSlide key={ep}>
+              <SwiperSlide key={ep.id || index}>
                 <div
-                  onClick={() => onSelect(ep)}
-                  className={cx("content", { active: currentEp === ep })}
+                  onClick={() => onSelect(epNum)}
+                  className={cx("content", { active: currentEp === epNum })}
                 >
-                  <ImageS src={thumbnailUrls[ep - 1]} className={cx("img")} />
-                  <p className={cx("caption")}>Tập {ep}</p>
+                  <ImageS src={ep.thumbnail} className={cx("img")} />
+                  <p className={cx("caption")}>{ep.title}</p>
                 </div>
               </SwiperSlide>
             );
