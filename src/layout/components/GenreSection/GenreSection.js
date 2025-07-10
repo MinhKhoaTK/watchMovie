@@ -37,7 +37,7 @@ function GenreSection({ data = [] }) {
           ? genreName.charAt(0).toUpperCase() + genreName.slice(1)
           : "Không xác định"}
       </h2>
-      <div className={cx("genre-catagory")}>
+      <div className={cx("genre-category")}>
         {genreMovie.length === 0 ? (
           <p>Không tìm thấy phim nào thuộc thể loại "{genreName}"</p>
         ) : (

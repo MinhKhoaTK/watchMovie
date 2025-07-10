@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 
 import Styles from "./BannerMovies.module.scss";
@@ -7,7 +7,7 @@ import BannerOnly from "../../layout/BannerOnly/BannerOnly";
 import ImageS from "../../components/ImageS";
 import { RateIcon, RateHalf } from "../../components/Icon";
 import Button from "../../components/Button";
-import { moviesData } from "../../components/Datalc";
+import { moviesData, genreSections } from "../../components/Datalc";
 import { MovieCategorySection } from "../../layout/components";
 import ScrollToTop from "../../components/ScrollToTop";
 import ModalTrailer from "../../layout/components/ModalTrailer";
@@ -16,12 +16,12 @@ import { slugify } from "../../untils";
 
 const cx = classNames.bind(Styles);
 function BannerMovies() {
-  const actionMovies = moviesData.filter((item) => item.category === "action");
-  const animeMovies = moviesData.filter((item) => item.category === "anime");
-  const dramaMovies = moviesData.filter((item) => item.category === "drama");
-  const comedyMovies = moviesData.filter((item) => item.category === "comedy");
-  const horrorMovies = moviesData.filter((item) => item.category === "horror");
-  const spyMovies = moviesData.filter((item) => item.category === "spy");
+  // const actionMovies = moviesData.filter((item) => item.category === "action");
+  // const animeMovies = moviesData.filter((item) => item.category === "anime");
+  // const dramaMovies = moviesData.filter((item) => item.category === "drama");
+  // const comedyMovies = moviesData.filter((item) => item.category === "comedy");
+  // const horrorMovies = moviesData.filter((item) => item.category === "horror");
+  // const spyMovies = moviesData.filter((item) => item.category === "spy");
 
   const { state } = useLocation();
   const navigate = useNavigate();
@@ -99,18 +99,16 @@ function BannerMovies() {
           </div>
           <div className={cx("container")}>
             <div className={cx("content-banner")}>
-              <MovieCategorySection
-                title="Phim Hành Động"
-                data={actionMovies}
-              />
-              <MovieCategorySection title="Drama" data={dramaMovies} />
-              <MovieCategorySection title="Phim Hoạt Hình" data={animeMovies} />
-              <MovieCategorySection
-                title="Thể Loại Comedy"
-                data={comedyMovies}
-              />
-              <MovieCategorySection title="Phim Kinh Dị" data={horrorMovies} />
-              <MovieCategorySection title="Phim Điệp Viên" data={spyMovies} />
+              {genreSections.map((genre) => {
+                const movies = moviesData.filter(
+                  (item) => item.category === genre.slug
+                );
+                return (
+                  <Link key={genre.slug} to={`/genre/${genre.slug}`}>
+                    <MovieCategorySection title={genre.title} data={movies} />
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </BannerOnly>

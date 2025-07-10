@@ -10,10 +10,11 @@ const policRoutes = [
   { path: config.routes.contact, component: Contact, layout: Contact },
   { path: config.routes.baner, component: BannerMovies, layout: BannerMovies },
   {
-    path: config.routes.genre,
+    path: config.routes.genre + "/:genreName",
     component: GenrePage,
     layout: GenrePage,
   },
+  { path: (config.routes.genre || "/genre") + "/:genreName" },
   // { path: config.routes.watch + "/:id", component: WatchMovie, layout: null },
   {
     path: config.routes.watch + "/:slug/:ep",

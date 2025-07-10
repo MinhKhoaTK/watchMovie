@@ -1506,6 +1506,18 @@ export const moviesData = [
     ),
   },
 ];
+
+//--------------//
+export const genreSections = [
+  { title: "Phim Hành Động", slug: "action" },
+  { title: "Drama", slug: "drama" },
+  { title: "Phim Hoạt Hình", slug: "anime" },
+  { title: "Thể Loại Comedy", slug: "comedy" },
+  { title: "Phim Kinh Dị", slug: "horror" },
+  { title: "Phim Điệp Viên", slug: "spy" },
+];
+
+//--------------//
 export const sliceMovies = [
   {
     id: 1,

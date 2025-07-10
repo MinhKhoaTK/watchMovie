@@ -9,7 +9,9 @@ const cx = classNames.bind(Styles);
 
 function MovieCategorySection({ title, data = [] }) {
   if (data.length === 0) return null;
-
+  console.log("movieCategory : " + title);
+  const Datas = data.map((d) => d.category);
+  console.log("data-movieCategory : " + Datas);
   return (
     <div className={cx("movie-category")}>
       <h2 className={cx("title-content")}>{title}</h2>
@@ -32,9 +34,7 @@ function MovieCategorySection({ title, data = [] }) {
               description={movie.description}
               videoTrailer={movie.videoTrailer}
               key={movie.id}
-              videoUrl={movie.videoUrl}
               episodes={movie.episodes}
-              thumbnailUrls={movie.thumbnailUrls}
             />
           </SwiperSlide>
         ))}
