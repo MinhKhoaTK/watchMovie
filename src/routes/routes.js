@@ -14,7 +14,7 @@ const policRoutes = [
     component: GenrePage,
     layout: GenrePage,
   },
-  { path: (config.routes.genre || "/genre") + "/:genreName" },
+  { path: (config.routes.genre || "/genre") + "/:genreName" }, // falback nếu genre ko bắt dc category
   // { path: config.routes.watch + "/:id", component: WatchMovie, layout: null },
   {
     path: config.routes.watch + "/:slug/:ep",

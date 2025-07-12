@@ -1,3 +1,20 @@
+    @media screen and (max-width :768px) {
+    .btn-server{
+        width: auto;
+        height: 25px;
+      font-weight: 100;
+      font-size: 0.35em;
+      padding: 0px 0px;
+    }
+    .title-ep{
+        font-size: 1rem;
+    }
+    .icon-flim{
+     width: 1.6rem;
+     height: 1.6rem;
+    }
+
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -10,8 +27,21 @@
     margin: 0 auto;
     height: 1700px;
 }
+.server {
+    margin: 1.6rem 0rem 1.6rem 0;
+}
+.btn-server{
+    width: 120px;
+    max-width: 25%;
+}
 
 .Episode-carousel{
     width: 100%;
 
+}
+.title-ep{
+    margin: 1rem 0 1rem 0;
+}
+.icon-flim{
+     vertical-align: bottom;
 }

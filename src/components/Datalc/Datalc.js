@@ -475,20 +475,15 @@ export const moviesData = [
     description:
       "Một bộ phim khoa học viễn tưởng đầy kịch tính về việc xâm nhập giấc mơ...",
     views: 3478921,
-    // thumbnailUrls: [
-    //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv38JbVTOJaTlZ15Y9h-NDVfiNN3ITiuQpg&s",
-    //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv38JbVTOJaTlZ15Y9h-NDVfiNN3ITiuQpg&s",
-    //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPv38JbVTOJaTlZ15Y9h-NDVfiNN3ITiuQpg&s",
-    // ],
-    // videoUrl: [
-    //   "https://www.youtube.com/watch?v=i9zjvUywVG8",
-    //   "https://www.youtube.com/watch?v=i3-jlhJgU9U",
-    //   "https://www.youtube.com/watch?v=0b-H8oQUs1A",
-    // ],
     videoTrailer: "YoHD9XEInc0",
     episodes: createEpisodes(
       "Inception",
       3,
+      [
+        "https://www.youtube.com/watch?v=i9zjvUywVG8",
+        "https://www.youtube.com/watch?v=i3-jlhJgU9U",
+        "https://www.youtube.com/watch?v=0b-H8oQUs1A",
+      ],
       [
         "https://www.youtube.com/watch?v=i9zjvUywVG8",
         "https://www.youtube.com/watch?v=i3-jlhJgU9U",
@@ -509,11 +504,6 @@ export const moviesData = [
     description:
       "Hành trình cuối cùng của nhóm Avengers nhằm đảo ngược hậu quả...",
     views: 4893042,
-    // thumbnailUrls: [
-    //   "https://upload.wikimedia.org/wikipedia/vi/2/2d/Avengers_Endgame_bia_teaser.jpg",
-    //   "https://upload.wikimedia.org/wikipedia/vi/2/2d/Avengers_Endgame_bia_teaser.jpg",
-    // ],
-    // videoUrl: ["https://www.youtube.com/watch?v=8gcRTMr-rlg"],
     videoTrailer: "TcMBFSGVi1c",
     episodes: createEpisodes(
       "Avengers: Endgame",
@@ -533,13 +523,12 @@ export const moviesData = [
     description: "Một chuyến du hành không gian vượt thời gian...",
     views: 4103920,
     videoTrailer: "zSWdZVtXT7E ",
-    // thumbnailUrls: [""],
-    // videoUrl: "",
     episodes: createEpisodes(
       "Interstellar",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -556,8 +545,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Parasite",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -573,8 +563,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "The Dark Knight",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -590,8 +581,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Joker",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -607,8 +599,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Tenet",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -624,8 +617,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Dune",
       2,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -641,8 +635,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Avatar 2",
       2,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -659,8 +654,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Oppenheimer",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -677,8 +673,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Venom 1",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -695,8 +692,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Venom 2",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -713,8 +711,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Venom: Kèo Cuối",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -731,8 +730,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Captain America 1",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -749,8 +749,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Captain America 2",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -767,8 +768,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Captain America: Civil War",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -785,8 +787,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Captain America 4 – Captain America: Brave New World",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -803,8 +806,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Black Panther 1",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -821,8 +825,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Black Panther 2 : Wakanda Forever",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -839,8 +844,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Iron Man SS1",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
 
@@ -858,8 +864,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Tom & Jerry",
       52,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -876,8 +883,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Spider-Man: No Way Home",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -894,8 +902,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Chị Mười Ba: 3 Ngày Sinh Tử",
       5,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -912,8 +921,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Minions: Sự Trỗi Dậy của Gru",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -930,8 +940,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Lật Mặt: Nhà Có Khách",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -948,8 +959,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Black Panther: Wakanda Forever",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -966,8 +978,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Inside Out",
       13,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -984,8 +997,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Điệp Vụ Báo Đen",
       8,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1002,8 +1016,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Chuyện Ma Gần Nhà",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1020,8 +1035,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Em và Trịnh",
       3,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
 
@@ -1039,8 +1055,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Deadloch",
       8,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1057,8 +1074,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "The Lake",
       6,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1075,8 +1093,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Everybody Loves Raymond",
       210,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1093,8 +1112,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Chuck",
       91,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1111,8 +1131,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Comicstaan",
       3,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1129,8 +1150,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Red Oaks",
       26,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1147,8 +1169,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Truth Seekers",
       8,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1165,8 +1188,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Comedy Island Indonesia",
       6,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1183,8 +1207,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Dạ quỷ",
       1,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1201,8 +1226,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Biệt đội bất hảo",
       12,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1219,8 +1245,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Naruto SS1",
       220,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1237,8 +1264,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Naruto SS2",
       500,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1255,8 +1283,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "7 viên ngọc rồng",
       153,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1273,8 +1302,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "7 viên ngọc rồng siêu cấp",
       131,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1291,8 +1321,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "7 viên ngọc rồng z",
       291,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1309,8 +1340,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Fairy Tail",
       175,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1327,8 +1359,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Fairy Tail 2",
       102,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1345,8 +1378,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Fairy Tail: Nhiệm Vụ 100 Năm",
       12,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1363,8 +1397,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Mèo Máy Kuro",
       36,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1381,8 +1416,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Pokemon",
       1200,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1399,8 +1435,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Digimon",
       54,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1417,8 +1454,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Ichigo",
       366,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1435,8 +1473,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Rắc Rối Đáng Yêu",
       26,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1453,8 +1492,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Huyền Thoại Đôi Cánh",
       52,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1471,8 +1511,9 @@ export const moviesData = [
     episodes: createEpisodes(
       "Thủy Thủ Mặt Trăng",
       200,
-      "https://link-video.mp4",
-      "https://link-thumbnail.jpg"
+      ["https://link-video.mp4"],
+      [],
+      ["https://link-thumbnail.jpg"]
     ),
   },
   {
@@ -1497,6 +1538,7 @@ export const moviesData = [
     episodes: createEpisodes(
       "Genshin Impact",
       200,
+      ["/videos/genshin.mp4", "/videos/genshin2.mp4", "/videos/genshin3.mp4"],
       ["/videos/genshin.mp4", "/videos/genshin2.mp4", "/videos/genshin3.mp4"],
       [
         "https://store-images.s-microsoft.com/image/apps.8648.14057893183113088.f6290e57-0d66-4252-a17e-d1fd92cbc82b.1d8e84d0-dae6-4cab-b76a-fad7289904b9",

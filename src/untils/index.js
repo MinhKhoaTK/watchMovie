@@ -10,16 +10,22 @@ export const slugify = (title) => {
 export const createEpisodes = (
   title,
   total,
-  videoUrls = [],
+  videoUrl = [],
+  videoUrlVip = [],
   thumbnailUrls = []
 ) => {
   const slug = slugify(title);
+
   return Array.from({ length: total }, (_, i) => {
     const epNum = i + 1;
+    const defaultPath = `/videos/${slug}-ep${epNum}`;
     return {
       id: `ep-${slug}-${epNum}`,
       title: `Tập ${epNum}`,
-      videoUrl: videoUrls[i] || `/videos/${slug}-ep${epNum}.mp4`,
+      server: {
+        videoUrl: videoUrl[i] || `${defaultPath}.mp4`,
+        videoUrlVip: videoUrlVip[i] || `${defaultPath}-vip.mp4`,
+      },
       thumbnail: thumbnailUrls[i] || `/thumbnails/${slug}-ep${epNum}.jpg`,
     };
   });

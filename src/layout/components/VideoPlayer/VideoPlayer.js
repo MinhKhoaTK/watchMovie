@@ -13,9 +13,9 @@ function VideoPlayer({ id, title, image, description, videoUrl }) {
         className={cx("player")}
         controls
         poster={image}
-        key={videoUrl.videoUrl}
+        key={videoUrl.server.videoUrl}
       >
-        <source src={videoUrl.videoUrl} type="video/mp4" />
+        <source src={videoUrl.server.videoUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <h2 className={cx("title")}>{title}</h2>

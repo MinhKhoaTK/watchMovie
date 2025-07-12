@@ -8,6 +8,8 @@ import ScrollToTop from "../../components/ScrollToTop";
 import { VideoPlayer, EpisodeCarousel } from "../../layout/components";
 import { moviesData } from "../../components/Datalc";
 import { slugify } from "../../untils";
+import Button from "../../components/Button";
+import { VideoIcon } from "../../components/Icon";
 
 const cx = classNames.bind(Styles);
 function WatchMovie() {
@@ -60,7 +62,14 @@ function WatchMovie() {
                 videoUrl={currentVideo}
               />
             </div>
+            <div className={cx("server")}>
+              <Button className={cx("btn-server")}>server Normal</Button>
+              <Button className={cx("btn-server")}>server VIP</Button>
+            </div>
             <div className={cx("Episode-carousel")}>
+              <p className={cx("title-ep")}>
+                <VideoIcon className={cx("icon-flim")} /> Danh Sách Tập :
+              </p>
               <EpisodeCarousel
                 episodes={episodes}
                 currentEp={currentEp}

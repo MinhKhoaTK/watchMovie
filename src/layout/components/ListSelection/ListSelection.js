@@ -5,6 +5,7 @@ import ImageS from "../../../components/ImageS";
 
 const cx = classNames.bind(Styles);
 function ListSelection({ data }) {
+  console.log(data);
   const shuffled = [...data].sort(() => Math.random() - 0.5).slice(0, 6);
 
   return (
@@ -26,7 +27,7 @@ function ListSelection({ data }) {
                   <span className={cx("title-item")}>
                     {datas.title}
                     <p>
-                      số tập : {datas.episodes.id} / {datas.episodes.id}
+                      số tập : {datas.id} / {datas.id}
                     </p>
                     <p>lượt xem : {datas.views}</p>
                   </span>

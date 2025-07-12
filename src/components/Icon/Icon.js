@@ -102,8 +102,10 @@ export const RateIcon = ({
   fill = "#ffd401",
   width = "3.2rem",
   height = "3.2rem",
+  className,
 }) => (
   <svg
+    className={className}
     width={width}
     height={height}
     fill={fill}
@@ -126,6 +128,7 @@ export const RateHalf = ({
   className,
 }) => (
   <svg
+    className={className}
     fill="#fad000"
     width={width}
     height={height}
@@ -142,5 +145,114 @@ export const RateHalf = ({
     <g id="SVGRepo_iconCarrier">
       <path d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"></path>
     </g>
+  </svg>
+);
+
+export const VideoIcon = ({
+  width = "3.1rem",
+  height = "3.1rem",
+  className,
+}) => (
+  <svg
+    className={className}
+    width={width}
+    height={height}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+  >
+    <defs>
+      <linearGradient
+        id="linear-gradient"
+        x1="346.286"
+        y1="154.667"
+        x2="191.952"
+        y2="154.667"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset="0" stopColor="#4793eb" />
+        <stop offset="1" stopColor="#2367ec" />
+      </linearGradient>
+      <linearGradient
+        id="linear-gradient-2"
+        x1="315.75"
+        y1="154.667"
+        x2="242.407"
+        y2="154.667"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset="0" stopColor="#fff" />
+        <stop offset="1" stopColor="#edf1f2" />
+      </linearGradient>
+      <linearGradient
+        id="linear-gradient-3"
+        x1="176.571"
+        y1="165.333"
+        x2="22.28"
+        y2="165.333"
+        xlinkHref="#linear-gradient"
+      />
+      <linearGradient
+        id="linear-gradient-4"
+        x1="131.571"
+        y1="165.333"
+        x2="84.164"
+        y2="165.333"
+        xlinkHref="#linear-gradient-2"
+      />
+      <linearGradient
+        id="linear-gradient-5"
+        x1="480.643"
+        y1="336"
+        x2="355.948"
+        y2="336"
+        xlinkHref="#linear-gradient"
+      />
+      <linearGradient
+        id="linear-gradient-6"
+        x1="353.357"
+        y1="336"
+        x2="25.465"
+        y2="336"
+        xlinkHref="#linear-gradient"
+      />
+      <linearGradient
+        id="linear-gradient-7"
+        x1="136.393"
+        y1="384"
+        x2="82.393"
+        y2="384"
+        xlinkHref="#linear-gradient-2"
+      />
+      <style>{`
+        .cls-1 { fill: url(#linear-gradient-2); }
+        .cls-2 { fill: url(#linear-gradient-6); }
+        .cls-3 { fill: url(#linear-gradient-5); }
+        .cls-4 { fill: url(#linear-gradient-7); }
+        .cls-5 { fill: url(#linear-gradient-3); }
+        .cls-6 { fill: url(#linear-gradient); }
+        .cls-7 { fill: url(#linear-gradient-4); }
+      `}</style>
+    </defs>
+    <circle className="cls-6" cx="272" cy="154.667" r="90.667" />
+    <circle className="cls-1" cx="272" cy="154.667" r="42.667" />
+    <circle className="cls-5" cx="101.333" cy="165.333" r="80" />
+    <circle className="cls-7" cx="101.333" cy="165.333" r="32" />
+    <path
+      className="cls-3"
+      d="M474.605,244.06c-10.058-5.778-22.044-5.736-32.062,.107l-95.918,55.952c-3.277,1.911-5.292,5.42-5.292,9.214v53.333c0,3.794,2.015,7.302,5.292,9.214l95.918,55.952c5.042,2.941,10.58,4.411,16.122,4.411,5.471,0,10.944-1.434,15.941-4.304,10.057-5.777,16.061-16.15,16.061-27.748v-128.383c0-11.598-6.004-21.971-16.061-27.748Z"
+    />
+    <rect
+      className="cls-2"
+      x="21.333"
+      y="224"
+      width="341.333"
+      height="224"
+      rx="53.333"
+      ry="53.333"
+    />
+    <path
+      className="cls-4"
+      d="M128,394.667h-42.667c-5.891,0-10.667-4.776-10.667-10.667s4.776-10.667,10.667-10.667h42.667c5.891,0,10.667,4.776,10.667,10.667s-4.776,10.667-10.667,10.667Z"
+    />
   </svg>
 );

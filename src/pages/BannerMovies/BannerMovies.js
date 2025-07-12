@@ -104,9 +104,14 @@ function BannerMovies() {
                   (item) => item.category === genre.slug
                 );
                 return (
-                  <Link key={genre.slug} to={`/genre/${genre.slug}`}>
-                    <MovieCategorySection title={genre.title} data={movies} />
-                  </Link>
+                  <MovieCategorySection
+                    title={
+                      <Link key={genre.slug} to={`/genre/${genre.slug}`}>
+                        {genre.title}
+                      </Link>
+                    }
+                    data={movies}
+                  />
                 );
               })}
             </div>
